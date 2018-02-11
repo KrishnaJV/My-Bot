@@ -50,4 +50,4 @@ async def kick(ctx, user: discord.Member):
     await bot.say(" Cya, {}".format(user.name))
     await bot.kick(user)
 
-client.login(process.env.BOT_TOKEN)
+bot.run(process.env.BOT_TOKEN)
