@@ -1,14 +1,14 @@
 {
 
-  "name": "2.0"
-   "descripition"; "Test"
-   "version"; "0.0.0"
-   "main": "Bot2.0.py",
-   "scripts"; {
-       "start"; "python bot.py"
+  "name":"2.0",
+   "descripition":"Test",
+   "version":"0.0.0",
+   "main":"Bot2.0.py",
+   "scripts":{
+       "start":"python bot.py"
    },
-   "dependencies"; {
-   "discord.py"; "11.1.0",
-   "request"; "2.01.0"
+   "dependencies":{
+   "discord.py": "11.1.0",
+   "request": "2.01.0"
    }
   } 
