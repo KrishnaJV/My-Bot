@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import chalk
 
-bot = commands.Bot(command_prefix='')
+bot = commands.Bot(command_prefix='#')
 
 print (discord.__version__)
 
@@ -15,12 +15,20 @@ async def on_ready():
     print ("With the ID: " + bot.user.id)
 
 @bot.command(pass_context=True)
-async def hi(ctx):
-    await bot.say("Hi")
+async def hi(ctx,):
+    await bot.say("**Hi**")
+
+@bot.command(pass_context=True)
+async def Hi(ctx,):
+    await bot.say("**Hi**")    
 
 @bot.command(pass_context=True)
 async def bye(ctx):
     await bot.say("Bye")
+
+@bot.command(pass_context=True)
+async def Bye(ctx):
+    await bot.say("Bye")    
       
 
 @bot.command(pass_context=True)
@@ -50,4 +58,5 @@ async def kick(ctx, user: discord.Member):
     await bot.say(" Cya, {}".format(user.name))
     await bot.kick(user)
 
-bot.run(process.env.BOT_TOKEN)
+
+bot.run("TOKEN")
